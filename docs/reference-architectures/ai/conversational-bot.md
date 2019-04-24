@@ -15,7 +15,7 @@ This reference architecture describes how to build an enterprise-grade conversat
 
 [![Diagram of the architecture][0]][0]
 
-The best practice utility samples used in this architecture are fully open-sourced and available on [GitHub][git-repo-base]. 
+The best practice utility samples used in this architecture are fully open-sourced and available on [GitHub][git-repo-base].
 
 ## Architecture
 
@@ -219,4 +219,3 @@ You can deploy the bot logic directly from your IDE or from a command line, such
 [appinsights-logger]: https://github.com/Microsoft/botbuilder-utils-js/tree/master/packages/botbuilder-transcript-app-insights
 [feedback-util]: https://github.com/Microsoft/botbuilder-utils-js/tree/master/packages/botbuilder-feedback
 [testing util]: https://github.com/Microsoft/botbuilder-utils-js/tree/master/packages/botbuilder-http-test-recorder
-

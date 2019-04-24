@@ -16,7 +16,7 @@ This library enables logging of Azure Databricks service metrics as well as Apac
 
 ![Screenshot of dashboard](./_images/dashboard-screenshot.png)
 
-## Prequisites
+## Prerequisites
 
 Clone the [Github repository](https://github.com/mspnp/spark-monitoring) and [follow the deployment instructions](./configure-cluster.md) to build and configure the Azure Monitor logging for Azure Databricks library to send logs to your Azure Log Analytics workspace.
 
@@ -36,7 +36,7 @@ To deploy the Azure Log Analytics workspace, follow these steps:
     az group deployment create --resource-group <resource-group-name> --template-file logAnalyticsDeploy.json --parameters location='East US' serviceTier='Standalone'
     ```
 
-This template creates the workspace and also creates a set of predefined queries that are used by by dashboard.
+This template creates the workspace and also creates a set of predefined queries that are used by dashboard.
 
 ## Deploy Grafana in a virtual machine
 
@@ -63,9 +63,9 @@ Once the deployment is complete, the bitnami image of Grafana is installed on th
 
 ## Update the Grafana password
 
-As part of the setup process, the Grafana installation script outputs a temporary password for the **admin** user. You need this temporary password to sign in. To obtain the temporary password, follow these steps:  
+As part of the setup process, the Grafana installation script outputs a temporary password for the **admin** user. You need this temporary password to sign in. To obtain the temporary password, follow these steps:
 
-1. Log in to the Azure portal.  
+1. Log in to the Azure portal.
 1. Select the resource group where the resources were deployed.
 1. Select the VM where Grafana was installed. If you used the default parameter name in the deployment template, the VM name is prefaced with **sparkmonitoring-vm-grafana**.
 1. In the **Support + troubleshooting** section, click **Boot diagnostics** to open the boot diagnostics page.
@@ -77,7 +77,7 @@ Next, change the Grafana administrator password by following these steps:
 
 1. In the Azure portal, select the VM and click **Overview**.
 1. Copy the public IP address.
-1. Open a web browser and navigate to the following URL: `http://<IP addresss>:3000`.
+1. Open a web browser and navigate to the following URL: `http://<IP address>:3000`.
 1. At the Grafana log in screen, enter **admin** for the user name, and use the Grafana password from the previous steps.
 1. Once logged in, select **Configuration** (the gear icon).
 1. Select **Server Admin**.
@@ -149,7 +149,7 @@ The visualizations are as follows:
 
 ### Job latency
 
-This visualization shows execution latency for a job, which is a coarse view on the overall peformance of a job. Displays the job execution duration from start to completion. Note that the job start time is not the same as the job submission time. Latency is represented as percentiles (10%, 30%, 50%, 90%) of job execution indexed by cluster ID and application ID.
+This visualization shows execution latency for a job, which is a coarse view on the overall performance of a job. Displays the job execution duration from start to completion. Note that the job start time is not the same as the job submission time. Latency is represented as percentiles (10%, 30%, 50%, 90%) of job execution indexed by cluster ID and application ID.
 
 ### Stage latency
 
@@ -169,11 +169,11 @@ This visualization shows a set of the execution metrics for a given task's execu
 
 ### Cluster throughput
 
-This visualization is a high level view of work items indexed by cluster and application to represent the amount of work done per cluster and application. It shows the number of jobs, tasks, and stages completed per cluster, application, and stage in one minute increments. 
+This visualization is a high level view of work items indexed by cluster and application to represent the amount of work done per cluster and application. It shows the number of jobs, tasks, and stages completed per cluster, application, and stage in one minute increments.
 
 ### Streaming Throughput/Latency
 
-This visualzation is related to the metrics associated with a structured streaming query. The graphs shows the number of input rows per second and the number of rows processed per second. The streaming metrics are also represented per application. These metrics are sent when the OnQueryProgress event is generated as the structured streaming query is processed and the visualization represents streaming latency as the amount of time, in milliseconds, taken to execute a query batch.
+This visualization is related to the metrics associated with a structured streaming query. The graphs shows the number of input rows per second and the number of rows processed per second. The streaming metrics are also represented per application. These metrics are sent when the OnQueryProgress event is generated as the structured streaming query is processed and the visualization represents streaming latency as the amount of time, in milliseconds, taken to execute a query batch.
 
 ### Resource consumption per executor
 
