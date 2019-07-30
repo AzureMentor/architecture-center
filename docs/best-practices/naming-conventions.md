@@ -103,7 +103,7 @@ In general, avoid having any special characters (`-` or `_`) as the first or las
 |Blob name | Container |1-1024 |Case sensitive |Any URL characters |`<variable based on blob usage>` |`<variable based on blob usage>` |
 |Queue name |Storage account |3-63 |Lowercase |0-9, a-z, A-Z and - |`<service short name>-<context>-<num>` |`awesomeservice-messages-001` |
 |Table name | Storage account |3-63 |Case insensitive |Alphanumeric |`<service short name><context>` |`awesomeservicelogs` |
-|File name | Storage account |3-63 |Lowercase | Alphanumeric |`<variable based on blob usage>` |`<variable based on blob usage>` |
+|File share name | Storage account |3-63 |Lowercase | 0-9, a-z, A-Z and - |`<variable based on file share usage>` |`<variable based on file share usage>` |
 |Data Lake Store | Global |3-24 |Lowercase | Alphanumeric |`<name>dls` |`telemetrydls` |
 |Managed Disk name | Resource Group | 1-80 | Case insensitive |Alphanumeric, hyphen and underscore but not on character 1|`<disktype>disk<number>`|`OSdisk1`|
 
@@ -128,11 +128,13 @@ In general, avoid having any special characters (`-` or `_`) as the first or las
 | --- | --- | --- | --- | --- | --- | --- |
 |Container Registry | Global |5-50 |Case insensitive | Alphanumeric |`<service short name>registry` |`app1registry` |
 
-### Service Bus
+### Messaging
 
 | Entity | Scope | Length | Casing | Valid Characters | Suggested Pattern | Example |
 | --- | --- | --- | --- | --- | --- | --- |
-|Service Bus Namespace | Global |6-50 |Case insensitive | Alphanumeric, hyphen, must start with a letter; see [here](/rest/api/servicebus/create-namespace) for details. |`<service short name>-bus` |`app1-bus` |
+|Service Bus namespace | Global | 6-50 |Case insensitive | Alphanumeric, hyphen; must start with a letter; see [here](/rest/api/servicebus/create-namespace) for details. |`<service short name>-bus` |`app1-bus` |
+| Event Hubs namespace | Global | 6-50 | Case insensitive | Alphanumeric, hyphen; must start with a letter; must end with a letter or number |  `<service>-ehns` | `app1-ehns` |
+| Event hub | Event Hubs namespace | 1-50 | Case insensitive | Alphanumeric, period, hyphen, underscore. Must start and end with a letter or number. | `<service>-<role>-eh` | `app1-orders-eh` |
 
 ## Organize resources with tags
 

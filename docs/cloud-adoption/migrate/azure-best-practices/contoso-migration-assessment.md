@@ -2,12 +2,13 @@
 title: "Assess on-premises workloads for migration to Azure"
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Learn how Contoso assesses its on-premises machines for migration to Azure by using Azure Migrate and Data Migration Assistant.
-services: site-recovery
 author: BrianBlanchard
-ms.service: site-recovery
-ms.topic: conceptual
-ms.date: 01/30/2019
 ms.author: brblanch
+ms.date: 01/30/2019
+ms.topic: conceptual
+ms.service: cloud-adoption-framework
+ms.subservice: migrate
+services: site-recovery
 ---
 
 # Assess on-premises workloads for migration to Azure
@@ -269,7 +270,7 @@ Before deploying the VM, Contoso checks that the OVA file is secure:
     **Example:**
 
     ```C:\>CertUtil -HashFile C:\AzureMigrate\AzureMigrate.ova SHA256```
-3. The generated hash should match the hash values listed [here](/azure/migrate/tutorial-assessment-vmware#continuous-discovery).
+3. The generated hash should match the hash values listed in the [Verify security](/azure/migrate/tutorial-assess-vmware#verify-security) section of the [Assess VMWare VMs for migration](/azure/migrate/tutorial-assess-vmware) tutorial.
 
 ### Create the collector appliance
 
