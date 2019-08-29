@@ -46,14 +46,18 @@ items:
       href: guide/design-principles/design-for-evolution.md
     - name: Build for the needs of business
       href: guide/design-principles/build-for-business.md
-  - name: Choosing a compute service
+  - name: Technology choices
     items:
-    - name: Overview
-      href: guide/technology-choices/compute-overview.md
-    - name: Decision tree
-      href: guide/technology-choices/compute-decision-tree.md
-    - name: Compute comparison
-      href: guide/technology-choices/compute-comparison.md
+    - name: Choosing a compute service
+      items:
+      - name: Overview
+        href: guide/technology-choices/compute-overview.md
+      - name: Decision tree
+        href: guide/technology-choices/compute-decision-tree.md
+      - name: Compute comparison
+        href: guide/technology-choices/compute-comparison.md
+    - name: Choosing a load balancing service
+      href: guide/technology-choices/load-balancing-overview.md
   - name: Best Practices
     items:
     - name: API design
@@ -80,7 +84,17 @@ items:
       href: best-practices/retry-service-specific.md
     - name: Transient fault handling
       href: best-practices/transient-faults.md
-  - name: Performance Antipatterns
+  - name: Performance tuning
+    items:
+    - name: Introduction
+      href: performance/index.md
+    - name: Scenario 1 - Distributed transactions
+      href: performance/distributed-transaction.md
+    - name: Scenario 2 - Multiple backend services
+      href: performance/backend-services.md
+    - name: Scenario 3 - Event streaming
+      href: performance/event-streaming.md
+  - name: Performance antipatterns
     items:
     - name: Overview
       href: antipatterns/index.md
@@ -123,6 +137,8 @@ items:
     href: patterns/bulkhead.md
   - name: Cache-Aside
     href: patterns/cache-aside.md
+  - name: Choreography
+    href: patterns/choreography.md
   - name: Circuit Breaker
     href: patterns/circuit-breaker.md
   - name: Claim Check
@@ -617,6 +633,8 @@ items:
     items:
     - name: Overview
       href: serverless/index.md
+    - name: Code walkthrough
+      href: serverless/code.md
     - name: Reference architectures
       items:
       - name: Serverless event processing

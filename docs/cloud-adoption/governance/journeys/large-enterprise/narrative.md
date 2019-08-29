@@ -1,7 +1,7 @@
 ---
-title: "Large enterprise: The narrative behind the governance journey"
+title: "Large enterprise: The narrative behind the governance guide"
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: This narrative establishes a use case for a large enterprise governance journey.
+description: This narrative establishes a use case for governance during a large enterprise's cloud adoption journey.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 02/11/2019
@@ -13,13 +13,13 @@ ms.custom: governance
 
 # Large enterprise: The narrative behind the governance strategy
 
-The following narrative establishes a use case for a [large enterprise governance journey](./index.md). Before implementing the journey, it's important to understand the assumptions and reasoning that are reflected in this narrative. Then you can better align the governance strategy to your own organization's journey.
+The following narrative establishes a use case for [governance during large enterprise's cloud adoption journey](./index.md). Before acting on the recommendations in the guide, it's important to understand the assumptions and reasoning that are reflected in this narrative. Then you can better align the governance strategy to your own organization's cloud adoption journey.
 
 ## Back story
 
 Customers are demanding a better experience when interacting with this company. The current experience caused market erosion and led to the board to hire a Chief Digital Officer (CDO). The CDO is working with marketing and sales to drive a digital transformation that will power improved experiences. Additionally, several business units recently hired data scientists to farm data and improve many of the manual experiences through learning and prediction. IT is supporting these efforts where it can. However, there are "shadow IT" activities occurring that fall outside of needed governance and security controls.
 
-The IT organization is also facing its own challenges. Finance is planning continued reductions in the IT budget over the next five years, leading to some necessary spending cuts starting this year. Conversely, GDPR and other data sovereignty requirements are forcing IT to invest in assets in additional countries to localize data. Two of the existing datacenters are overdue for hardware refreshes, causing further problems with employee and customer satisfaction. Three more datacenters require hardware refreshes during the execution the five-year plan. The CFO is pushing the CIO to consider the cloud as an alternative for those datacenters, to free up capital expenses.
+The IT organization is also facing its own challenges. Finance is planning continued reductions in the IT budget over the next five years, leading to some necessary spending cuts starting this year. Conversely, GDPR and other data sovereignty requirements are forcing IT to invest in assets in additional countries to localize data. Two of the existing datacenters are overdue for hardware refreshes, causing further problems with employee and customer satisfaction. Three more datacenters require hardware refreshes during the execution of the five-year plan. The CFO is pushing the CIO to consider the cloud as an alternative for those datacenters, to free up capital expenses.
 
 The CIO has innovative ideas that could help the company, but she and her teams are limited to fighting fires and controlling costs. At a luncheon with the CDO and one of the business unit leaders, the cloud migration conversation generated interest from the CIO's peers. The three leaders aim to support each other using the cloud to achieve their business objectives, and they have begun the exploration and planning phases of cloud adoption.
 
