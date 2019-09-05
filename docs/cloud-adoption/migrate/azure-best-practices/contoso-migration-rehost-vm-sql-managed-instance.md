@@ -160,7 +160,7 @@ Contoso admins set up the virtual network as follows:
 1. They create a new virtual network (**VNET-SQLMI-EU2**) in the primary East US 2 region. It adds the virtual network to the **ContosoNetworkingRG** resource group.
 2. They assign an address space of 10.235.0.0/24. They ensure that the range doesn't overlap with any other networks in its enterprise.
 3. They add two subnets to the network:
-    - **SQLMI-DS-EUS2** (10.235.0.0.25)
+    - **SQLMI-DS-EUS2** (10.235.0.0/25)
     - **SQLMI-SAW-EUS2** (10.235.0.128/29). This subnet is used to attach a directory to the Managed Instance.
 
       ![Managed Instance - Create virtual network](media/contoso-migration-rehost-vm-sql-managed-instance/mi-vnet.png)
@@ -364,8 +364,8 @@ Now, Contoso admins configure the source environment. To set up its source envir
 - The configuration server that coordinates communications between the on-premises infrastructure and Azure. The configuration server manages data replication.
 - The process server that acts as a replication gateway. The process server:
   - Receives replication data.
-  - Optimizes replication date by using caching, compression, and encryption.
-  - Sends replication date to Azure Storage.
+  - Optimizes replication data by using caching, compression, and encryption.
+  - Sends replication data to Azure Storage.
 - The process server also installs the Mobility Service on the VMs that will be replicated. The process server performs automatic discovery of on-premises VMware VMs.
 - After the configuration server VM is created and started, Contoso registers the server in the vault.
 

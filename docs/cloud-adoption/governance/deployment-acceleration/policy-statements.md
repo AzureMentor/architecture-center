@@ -27,7 +27,7 @@ The following sample policy statements address common configuration-related busi
 
 **Policy statement:** All assets deployed to the cloud should be deployed using templates or automation scripts whenever possible.
 
-**Potential design options:** [Azure Resource Manager templates](/azure/azure-resource-manager/resource-group-overview#template-deployment) provides an infrastructure-as-code approach to deploying your resources to Azure. The [Azure Building Blocks](https://github.com/mspnp/template-building-blocks/wiki) provide a command-line tool and set of Resource Manager templates designed to simplify deployment of Azure resources.
+**Potential design options:** [Azure Resource Manager templates](/azure/azure-resource-manager/template-deployment-overview) provides an infrastructure-as-code approach to deploying your resources to Azure. The [Azure Building Blocks](https://github.com/mspnp/template-building-blocks/wiki) provide a command-line tool and set of Resource Manager templates designed to simplify deployment of Azure resources.
 
 ## Lack of visibility into system issues
 
@@ -56,5 +56,7 @@ To begin developing your own custom policy statements related to identity manage
 
 To accelerate adoption of this discipline, choose the [actionable governance guide](../journeys/index.md) that most closely aligns with your environment. Then modify the design to incorporate your specific corporate policy decisions.
 
+Building on risks and tolerance, establish a process for governing and communicating Deployment Acceleration policy adherence.
+
 > [!div class="nextstepaction"]
-> [Actionable governance guides](../journeys/index.md)
+> [Establish policy compliance processes](./compliance-processes.md)
