@@ -7,8 +7,10 @@ ms.author: jeanyd
 ms.date: 05/25/2019
 ms.topic: example-scenario
 ms.service: architecture-center
-ms.subservice: example-scenario
-ms.custom: database-team
+ms.subservice: example-scenarios
+ms.custom:
+  - database-team
+  - healthcare
 social_image_url: /azure/architecture/example-scenario/apps/media/architecture-telehealth-system.png
 ---
 
